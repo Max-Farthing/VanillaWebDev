@@ -17,16 +17,38 @@ body {
     margin: auto;
 }
 
+#hr {
+    color: #000;
+    position: fixed;
+}
+
 #header {
     background-color: rgb(15, 31, 103);
     color: white;
-    padding-top: 60px;
+    padding-top: 100px;
+}
+
+#navbar2 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: baseline;
+    list-style-type: none;
+    margin: 0;
+    background-color: white;
+    position: fixed;
+    z-index: 10001;
+    width: 100%;
+    text-align: center;
+}
+
+#navbar2 > li{
+    margin-right: 3vw;
 }
 
 #navbar {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-top: 55px;
     background-color: white;
     position: fixed;
     z-index: 10000;
