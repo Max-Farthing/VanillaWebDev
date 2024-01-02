@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cary Chevrolet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navcenter">
+        <ul id="navbar">
+            <li class="navitem" id="nav1"><a class="ula" href="#new">New Vehicles</a></li>
+            <li class="navitem" id="nav2"><a class="ula" href="#used">Used Vehicles</a></li>
+            <li class="navitem" id="nav3"><a class="ula" href="#service">Service and Parts</a></li>
+            <li class="navitem" id="nav4"><a class="ula" href="#about">About Us</a></li>
+            <!-- <li class="navitem"><a id="login" href="#about">Log in</a></li> get this on right side -->
+        </ul>
+    </div>
+    <div class="divcenter" id="header">
+        <h1 id="title">Kaycis Chevrolet of Cary</h1>
+        <h2><i>The Chevrolet Sales Event is happening <u>NOW</u> at Carolina's #1 auto dealer!</i></h2>
+    </div>
+    <div class="divcenter" id="home">
+        <h2 id="hometag">Search through our Pre-Owned inventory for any make or model</h2>
+        <select class="form-drop" id="year" name="Year">
+            <option value="anyYear" class="form-head">ANY YEAR</option>
+            <option value="22">2022</option>
+            <option value="21">2021</option>
+            <option value="20">2020</option>
+            <option value="20">2019</option>
+            <option value="20">2018</option>
+        </select>
+        <select class="form-drop" id="make" name="Make">
+            <option value="anyMake" class="form-head">ANY MAKE</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="cadillac">Cadillac</option>
+            <option value="buick">Buick</option>
+            <option value="gmc">GMC</option>
+        </select>
+        <select class="form-drop" id="model" name="Model">
+            <option value="anyModel" class="form-head">ANY MODEL</option>
+            <option value="corvette">Corvette</option>
+            <option value="silverado">Silverado</option>
+            <option value="camaro">Camaro</option>
+            <option value="caprice">Caprice</option>
+        </select>
+        <select class="form-drop" id="mileage" name="Mileage">
+            <option value="anyMileage" class="form-head">ANY MILEAGE</option>
+            <option value="30">30,000 or less</option>
+            <option value="40">40,000 or less</option>
+            <option value="50">50,000 or less</option>
+            <option value="60">60,000 or less</option>
+            <option value="100">100,000 or more</option>
+        </select>
+        <button type="submit" id="search">Search</button>
+        <a href="https://google.com" class="button-link" id="link1">New Inventory</a>
+        <a href="https://google.com" class="button-link" id="link2">Used Inventory</a>
+        <a href="https://google.com" class="button-link" id="link3">Schedule Service</a>
+        <a href="https://google.com" class="button-link" id="link4">Trade or Sell Vehicles</a>
+    </div>
+    <div id="featured">
+        <div id="videodiv">
+            <iframe id="yt" width="560" height="315" src="https://www.youtube.com/embed/MI7Tq6sRxE4?si=Gu2OARD1ZYZ8ekCg" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+             encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div id="flext">
+                <p class="ytcaption">100% Online Experience</p>
+                <h2>SHOP FROM HOME</h2>
+                <p><b>Instant Pricing - No Hassle - Build Your Deal Online</b></p>
+                <div id="miniflex">
+                    <button id="atag">START SHOPPING</button>
+                    <p class="ytcaption" id="see">SEE HOW IT WORKS</p>
+                </div>
+            </div>
+        </div>
+        <div id="feat">
+            <h1 id="title-tag">Featured Vehicles</h1>
+            <br>
+            <br>
+            <div id="vehicles">
+                <div class="veh-tag" id="silv15">
+                    <p class="bold">2023 Chevrolet</p>
+                    <a class="veh-link" href="#test">Silverado 1500</a>
+                    <p>$37,500</p>
+                </div>
+                <div class="veh-tag" id="colorado">
+                    <p class="bold">2023 Chevrolet</p>
+                    <a class="veh-link" href="#test">Colorado Limited</a>
+                    <p>$62,363</p>
+                </div>
+                <div class="veh-tag" id="express">
+                    <p class="bold">2023 Chevrolet</p>
+                    <a class="veh-link" href="#test">Express Van 2500F</a>
+                    <p>$25,000</p>
+                </div>
+                <div class="veh-tag" id="silv35">
+                    <p class="bold">2023 Chevrolet</p>
+                    <a class="veh-link" href="#test">Silverado 3500HD</a>
+                    <p>$50,252</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <br>
+            <br>
+            <hr>
+            <br>
+        </div>
+        <div id="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="ad1.jpg" alt="car image #1">
+                </li>
+                <li class="slide">
+                    <img src="ad2.jpg" alt="car image #2">
+                </li>
+                <li class="slide">
+                    <img src="ad3.jpg" alt="car image #3">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="models">
+        <h2 id="larger">Shop By Model</h2>
+        <div id="model-div">
+            <button>SUV</button>
+            <button>Sedan</button>
+            <button>Truck</button>
+        </div>
+    </div>
+    <div id="contact">
+        <h2>Call or Visit Us</h2>
+        <br>
+        <p>Contact Our Sales Department</p>
+        <h1>919-234-4431</h1>
+        <p>Monday 9:00am-8:00pm</p>
+        <p>Tuesday 9:00am-8:00pm</p>
+        <p>Wednesday 9:00am-8:00pm</p>
+        <p>Thursday 9:00am-8:00pm</p>
+        <p>Friday 9:00am-8:00pm</p>
+        <p>Saturday 9:00am-8:00pm</p>
+        <p>Sunday 9:00am-8:00pm</p>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>

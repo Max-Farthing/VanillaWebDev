@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width,initial-scale=1">
+	<title>Practice Website #1</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- icon for website -->
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+<div class="divtest">
+	<h1 id="C1" class="test">This is a heading</h1>
+	<p onmouseover="change()">This is a paragraph</p>
+	<hr> <!-- Horizontal rule -->
+	<h2>This is heading 2</h2>
+	<p>This is another paragraph</p>
+	<a href="https://google.com" target="_blank">This is a link to Google</a>
+	<br>
+	<a href="mailto:max.farthing@yahoo.com">Email me</a>
+	<p id="para1">This is another<br> paragraph with a line break</p> <!-- Br tag allows for line break -->
+	<img src="https://en.wikipedia.org/wiki/HTML#/media/File:HTML5_logo_and_wordmark.svg" width="500" height="600" alt="photo text">
+	<pre> <!-- pre tag saves formatting directly unlike p tag -->
+		example "test"
+of
+		
+		pre
+		
+		tag
+	</pre>
+	<b>This is a bold text</b>
+	<br> <!-- requires manual break when using these -->
+	<strong>This is a strong text</strong>
+	<br> <!-- requires manual break when using these -->
+	<i>This is italic text</i>
+	<br> <!-- requires manual break when using these -->
+	<em>This is emphasized text</em>
+	<br> <!-- requires manual break when using these -->
+	<p>this text is <mark>marked</mark></p>
+	<p>This is <del>deleted</del></p>
+	<a href="#C1">Bookmark to Header one</a>
+	<br>
+	<img src="skyimage.jpg" alt="image of sky" width="600px" height="400px">
+</div>
+
+<div class="div2">
+	<picture id="gojo">
+		<source media="(min-width: 650px)" srcset="gojoimage.jpg" height="300px">
+		<source media="(mid-width: 465px)" srcset="naruto.jpg">
+		<img src="escanorimage.jpg">
+	</picture>
+</div>
+
+<div>
+	<p id="partest">This is an image of gojo satoru</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p id="partest2">This is a paragraph line that I am using for testing</p>
+	<p id="partest3">This is a paragraph line that I am also using for testing, it has small spaces</p>
+	<p id="partest4">Paragraph testing line 3. This line has different letter spaces</p>
+</div>
+
+<div id="divcenter">
+	<h2 id="h2test">This is an h2 header</h2>
+	<table id="table1">
+		<caption>A table of NBA players</caption>
+		<tr>
+			<th>Name</th>
+			<th>Team</th>
+			<th>City</th>
+		</tr>
+		<tr>
+			<td colspan="2">Lebron James</td>
+			<td>Lakers</td>
+			<td>Los Angeles </td>
+		</tr>
+		<tr>
+			<td>Kevin Durant</td>
+			<td>Suns</td>
+			<td rowspan="2">Phoenix</td>
+		</tr>
+		<tr>
+			<td>Steph Curry</td>
+			<td>Warriors</td>
+			<td>Golden State</td>
+		</tr>
+	</table>
+</div>
+
+<div id="div3">
+	<h2>Unordered List</h2>
+	<ul id="unordered">
+		<li>Basketball</li>
+		<li>Football</li>
+		<ul>
+			<li>Soccer</li>
+			<li>American Football</li>
+		</ul>
+		<li>UFC</li>
+		<li>Golf</li>
+	</ul>
+	<h2>Ordered List</h2>
+	<ol type="I">
+		<li>Sweet Tea</li>
+		<li>Gatorade</li>
+		<li>Coke</li>
+		<li>Pepsi</li>
+	</ol>
+	<h2>Description List</h2>
+	<dl>
+		<dt>CS2</dt>
+		<dd>- 5v5 tactical shooter</dd>
+		<dt>Surfing</dt>
+		<dd>- Riding triangles</dd>
+	</dl>
+	<h2>Navigation bar using UL</h2>
+	<ul id="navbar">
+		<li class="navitem"><a class="ula" href="#home">Home</a></li>
+		<li class="navitem"><a class="ula" href="#news">News</a></li>
+		<li class="navitem"><a class="ula" href="#contact">Contact</a></li>
+	</ul>
+</div>
+
+<div id="div4">
+	<h2>Here I am going to practice centering a Div</h2>
+	<h3>Simply use <span id="span1">"margin: auto"</span> and decide a width</h3>
+	<h4>Notice the span tag above</h4>
+</div>
+
+<h1>Here I am going to put 2 div blocks side by side using "flexbox"</h1>
+<div id="div5">
+	<div id="div6">
+		<h2>Front End</h2>
+		<p>What the user can see</p>
+	</div>
+	<div id="div7">
+		<h2>Back End</h2>
+		<p>What happens behind the scenes</p>
+	</div>
+</div>
+
+<h1>Now I am going to do the same thing with "Grid"</h1>
+
+<div id="div8">
+
+	<div id="div9">
+		<h2>Front End</h2>
+		<p>What the user can see</p>
+	</div>
+	
+	<div id="div10">
+		<h2>Back End</h2>
+		<p>What happens behind the scenes</p>
+	</div>
+	
+</div>
+
+<br/>
+<br/>
+
+<div id="div11">
+	<a id="bookmark" href="#C1">Bookmark to jump back to the top</a>
+	<h2>Iframe example</h2>
+	<iframe src="https://www.w3schools.com/html/html_iframe.asp" height="200" width="300" title="Iframe example"></iframe>
+</div>
+
+<div>
+	<form>
+		<fieldset>
+			<label for="fname">First Name:</label><br/>
+			<input type="text" id="fname" name="fname"></input><br>
+			<label for="lname">Last Name:</label><br/>
+			<input type="password" id="lname" name="lname"></input><br/><br/>
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+	<form>
+		<br/>
+		<input type="radio" id="MJ" name="goat" value="Michael Jordan">
+		<label for="MJ">Michael Jordan</label><br/>
+		<input type="radio" id="Bron" name="goat" value="Lebron James">
+		<label for="Bron">Lebron James</label><br/>
+	</form>
+	<label>Choose a car:</label>
+	<select id="cars" name="cars">
+		<option value="honda">Honda</option>
+		<option value="toyota">Toyota</option>
+		<option value="lexus">Lexus</option>
+	</select>
+	<br/>
+	<button type="button" onclick="alert('Hello World')">Click here</button>
+</div>
+<div id="colorchange" onmouseover="changeColor()" onmouseout="changeColor2()">
+	<h2 id="jsdiv"></h2>
+	<p id="car"></p>
+	<button type="button" onclick="displayDate()">Click here for date</button>
+	<p id="date"></p><br/>
+	<p id="sort"></p>
+	<button onclick="sortNum()">Sort Numerically</button>
+	<button onclick="sortAlph()">Sort Alphabetically</button>
+	<form name="testForm" onsubmit="return validateForm()" method="post">
+		Name: <input type="text" name="fname"><br/>
+		<input type="submit" value="Submit">
+	</form>
+</div>
+<p><button onclick="myMove()">Click</button></p>
+<div id="container">
+	<div id="animate"></div>
+</div>
+<div id="node">
+	<h2 onmousedown="this.innerHTML = 'changed'" onmouseup="this.innerHTML = 'Click me'">Click me</h2>
+	<h2 onclick="changeColorText(this)">Change my color on click</h2>
+	<h2 id="eventListen">Testing out event listener</h2><br/> <!-- used inline block to not take up whole row -->
+	<h2 id="eventListen2">Testing out event listener again</h2>
+</div>
+
+<script src="test.js">
+		//console.log('Hello World');
+		//alert("Get owned noob");
+		//window.print();
+		//document.getElementById("div9").innerHTML = "Hello Bro";
+</script>
+	
+</body>
+</html>

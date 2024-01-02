@@ -1,0 +1,491 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#title {
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+
+.divcenter {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+#header {
+    background-color: rgb(15, 31, 103);
+    color: white;
+    padding-top: 60px;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    text-align: center;
+}
+
+.ula {
+    display: block;
+    color: rgb(85, 85, 85);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ula:hover {
+    color: rgb(44, 44, 44);
+}
+
+.navitem {
+    display: inline-block;
+}
+
+#login {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+}
+
+.navcenter {
+    display: grid;
+    justify-content: center;
+}
+
+/* Div of dropdowns, submit and a blocks */
+
+.form-drop {
+    position: absolute;
+    display: grid;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 145px;
+    cursor: pointer;
+    opacity: 85%;
+}
+
+.form-drop:hover {
+    opacity: 100%;
+}
+
+#year {
+    margin: 52%;
+}
+
+#make {
+    margin: 42%;
+}
+
+#model {
+    margin: 32%;
+}
+
+#mileage {
+    margin: 62%;
+}
+
+#home {
+    background-image: url(silverado.jpg);
+    background-position: center;
+    padding-bottom: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 20%, 100% 20%, 100% 100%, 0 100%);
+    margin-top: -200px;
+}
+
+#hometag {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 33px;
+    font-style: italic;
+}
+
+#search {
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 48%;
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: rgb(15, 31, 103);
+    color: white;
+    cursor: pointer;
+}
+
+
+#search:hover {
+    background-color: rgb(9, 19, 61);
+}
+
+.form-head {
+    color: rgb(121, 121, 121);
+}
+
+.button-link {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    background-color: #d9d9d9;
+    width: 250px;
+    height: 200px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+    font-weight: bold;
+    border: 1px solid rgb(15, 31, 103);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    opacity: 80%;
+}
+
+.button-link:hover {
+    opacity: 100%;
+}
+
+
+#link4 {
+    margin-top: 30%;
+    margin-left: 75%;
+    background-image: url(swap_image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#link3 {
+    margin-top: 30%;
+    margin-left: 55%;
+    background-image: url(tool_image.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#link2 {
+    margin-top: 30%;
+    margin-left: 35%;
+    background-image: url(usedcar_image.png);
+    background-size: 150%;
+    background-position: center;
+}
+
+#link1 {
+    margin-top: 30%;
+    margin-left: 15%;
+    background-image: url(car_image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.custom-dropdown {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.selected-option {
+    border: 1px solid navy;
+    padding: 10px;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.options li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.options li:hover {
+    background-color: #f0f0f0;
+}
+
+/* next */
+
+#featured {
+    background-color: rgb(15, 31, 103);
+    padding: 50px 50px;
+}
+
+#videodiv {
+    display: flex;
+    /* flex-direction: column; */
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* align-content: flex-end; */
+    /* padding: 20px;
+    padding-right: 450px;
+    margin-top: 60px; */
+    /* margin-bottom: 20px; */
+}
+
+h1 {
+    margin-top: 0px;
+    color: white;
+    font-size: 50px;
+}
+
+#yt {
+    flex-shrink: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* flex-shrink: 5; */
+    /* flex-grow: 1; */
+    /* flex-basis: 200px; */
+    /* flex: 1; */
+    /* align-self: baseline; */
+    /* order: 0; */
+    padding-left: 100px;
+}
+
+.ytcaption {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-left: 25px;
+}
+
+#atag {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(15, 31, 103);
+    font-weight: bold;
+    padding: 20px 30px;
+    margin-top: 70px;
+}
+
+#atag:hover {
+    cursor: pointer;
+    background-color: rgb(9, 19, 61);
+}
+
+#flext {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 100px;
+}
+
+#miniflex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+/* featured vehicles */
+
+#feat {
+    display: grid;
+}
+
+#vehicles {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px 1vw;
+    
+}
+
+.veh-tag {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    text-align: center;
+    background-size: 300px 175px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#title-tag {
+    margin: auto;
+}
+
+.veh-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.veh-link:hover {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#silv15 {
+    background-image: url(silverado2.jpg);
+    background-repeat: no-repeat;
+
+}
+
+#colorado {
+    background-image: url(colorado.jpg);
+
+}
+
+#express {
+    background-image: url(express.avif);
+}
+
+#silv35 {
+    background-image: url(silverado3500.jpg);
+
+}
+
+/* slideshow */
+
+#carousel {
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+}
+
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus
+{
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+/* models */
+
+#models {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#larger {
+    font-size: 40px;
+}
+
+#model-div {
+    display: flex;
+    justify-content: center;
+}
+
+#model-div > button {
+    text-align: center;
+    border-radius: .75rem;
+    background-color: white;
+    margin: 2px;
+    cursor: pointer;
+    width: 3vw;
+    height: 2.5vh;
+    border: none;
+}
+
+#model-div > button:focus {
+    background-color: black;
+    color: white;
+}
+
+/* information section of page */
+
+#contact {
+    padding-top: 7.5vh;
+    background-color: rgb(89, 89, 89);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding-bottom: 60px;
+}
+
+#contact > h1 {
+    text-decoration: underline;
+}
+
+#contact > p,
+#contact > h2 {
+    color: white;
+    margin: 8px 0;
+}
+
+#contact > h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
