@@ -116,19 +116,29 @@
             <br>
         </div>
         <div id="carousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="ad1.jpg" alt="car image #1">
-                </li>
-                <li class="slide">
-                    <img src="ad2.jpg" alt="car image #2">
-                </li>
-                <li class="slide">
-                    <img src="ad3.jpg" alt="car image #3">
-                </li>
-            </ul>
+            <button class="carousel__button carousel__button--left">&#8656;</button>
+
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide" data-active>
+                        <img class="carousel__image" src="ad1.jpg" alt="car image #1">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="ad2.jpg" alt="car image #2">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="ad3.jpg" alt="car image #3">
+                    </li>
+                </ul>
+            </div>
+
+            <button class="carousel__button carousel__button--right">&#8658;</button>
+
+            <div class="carousel__nav">
+                <div class="carousel__indicator current-slide"></div>
+                <div class="carousel__indicator"></div>
+                <div class="carousel__indicator"></div>
+            </div>
         </div>
     </div>
     <div id="models">
