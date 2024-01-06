@@ -273,3 +273,32 @@ console.log(navigator.geolocation.getCurrentPosition(showPosition));
 function showPosition(position) {
 	"lat: " + position.coords.latitude + "lon: " + position.coords.longitude;
 }
+
+const elements = ["Sports", "Reading", "Test"];
+const t = elements.indexOf("Test");
+console.log(t);
+
+const i = elements.findIndex((item) => item === "Sports");
+console.log(i);
+
+const elements2 = elements.map((item) => item + "added");
+console.log(elements);
+console.log(elements2);
+
+function transformToObjects(numberArray) {
+    return numberArray.map((item) => ({ val: item }));
+}
+
+console.log(transformToObjects(elements));
+
+const [firstName, lastName] = ["Max", "Farthing"];
+console.log(firstName);
+
+// const password = prompt("Your password");
+
+for(const element of elements) {
+	console.log(element);
+}
+
+elements[3] = "no";
+console.log(elements[3]);
